@@ -6,6 +6,7 @@
 	<title>Law Firm</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
 <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,7 @@
 <div id="headerWrapper">
 	<header>
         <img src="images/logo.png" alt="logo">
-		<h1>Justice Law</h1>
+		<h1>Cabot Cruises</h1>
         <div id="hamburger"><a href="#closex">&#9776;</a></div>
         <div id="phone"><a href="tel:18004442343">1-800-444-2343</a></div>
 	</header>
@@ -31,66 +32,41 @@
         <div id="closex"><a href="#hamburger">x</a></div>
         <ul>
         <li><a href="#">Home</a></li>
-        <li class ="active"><a href="#">Attorneys</a></li>
-        <li><a href="#">Practices</a></li>
+        <li class ="active"><a href="#">Cruises</a></li>
+        <li><a href="#">Agents</a></li>
+        <li><a href="#">Book</a></li>
     </ul>
     </nav>
 </div> <!-- end nav wrapper -->
 
 <div id="mainWrapper">
     <main>
-        <div class = "grid flexed">
-        <div class = "small-0 medium-0 large-2"></div>
-        <div class="card small-6 medium-3 large-2">
-            <section>Perry Mason</section>
-            <figure>
-                <img class = "faces" src="images/lawyer1.jpg" alt="Perry Mason">
-            </figure>
-            <button class = "buttonClass">Learn More</button>
-        </div>
-        <!-- <div class = "small-0 medium-0 large-1"></div> -->
-        <div class="card small-6 medium-3 large-2">
-            <section>Malcom Turnbull</section>
-            <figure>
-                <img class = "faces" src="images/lawyer2.jpg" alt="Malcom Turnbull">
-            </figure>
-            <button class = "buttonClass">Learn More</button>
-        </div>
-        <!-- <div class = "small-0 medium-0 large-1"></div> -->
-        <div class="card small-6 medium-3 large-2">
-            <section>Alan Shore</section>
-            <figure>
-                <img class = "faces" src="images/lawyer3.jpeg" alt="Alan Shore">
-            </figure>
-            <button class = "buttonClass">Learn More</button>
-        </div>
-        <!-- <div class = "small-0 medium-0 large-1"></div> -->
-        <div class="card small-6 medium-3 large-2">
-                <section>Alicia Florrick</section>
-                <figure>
-                    <img class = "faces" src="images/lawyer4.jpg" alt="Alicia Florrick">
-                </figure>
-                <button class = "buttonClass">Learn More</button>
-        </div>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="images/blog1.jpg" alt="Boston Statue">
+        <p><b>George Washington</b> - This monument is dedicated to one of the fathers of the revelution and first president of the U.S.</p>
+    </div>
+      <div class="swiper-slide">
+        <img src="images/blog2.jpg" alt="Paul House">
+        <p><b>Home of Paul Revere</b> - Famous for his ride throughout the city announcing the arrival of the British </p>
+    </div>
+      <div class="swiper-slide">
+        <img src="images/blog3.jpg" alt="Freedom Trail">
+        <p><b>Freedom Trail</b> - Walk the trail to discover more of the history in Boston</p>
+    </div>
+      <div class="swiper-slide">
+        <img src="images/blog4.jpg" alt="Bunker Hill">
+        <p><b>Bunker Hill</b> - Where one of the first major battles of the revelution was fought</p>
     </div>
 
-    <div class = "flexed">
-        <div class = "small-2 medium-0 large-1"></div>
-        <div class = "column boxes small-8 medium-4 large-2">
-            <div>Clients</div>
-        </div>
-        <div class = "small-2 medium-0 large-0"></div>
-        <div class = "small-2 medium-0 large-0"></div>
-        <div class = "column boxes small-8 medium-4 large-6">
-            <div>Your Case Review</div>
-        </div>
-        <div class = "small-2 medium-0 large-0"></div>
-        <div class = "small-2 medium-0 large-0"></div>
-        <div class = "column boxes small-8 medium-4 large-2">
-            <div>Famous Cases</div>
-        </div>
-
     </div>
+    
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
 
     <div class = "grid flexed">
         <div class="card small-12 medium-6 large-3">
@@ -154,23 +130,6 @@
 
         </div>
 
-
-        <!-- <div class = "flexed">
-            <div class = "small-0 medium-1 large-0"></div>
-            <div class = "column small-12 medium-5 large-6">
-                <h3>Missing Case of Watson</h3>
-                <p>Where did he go?</p>
-                <div class = "readon"><a href = "#">Read On</a></div>
-            </div>
-
-            <div class = "column small-12 medium-5 large-6">
-                <h3>Missing Case of George</h3>
-                <p>Where did he go?</p>
-                <div class = "readon"><a href = "#">Read On</a></div>
-            </div>
-
-        </div> -->
-
         <div class = "flexed social">
             <div class = "small-2"></div>
             <div class="column small-2">
@@ -196,6 +155,8 @@
     </footer>
 </div> <!-- end footer wrapper -->
    
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/59e38dadde.js" crossorigin="anonymous"></script>
 </body>
 </html> 

@@ -32,6 +32,25 @@ header {
     }
 } // end header
 
+.swiper {
+    width: 100%;
+    height: auto;
+    img{
+        width: 100%;
+        display: block;
+    }
+    p{
+        margin: 0;
+        padding: .4rem 2vw;
+        position: absolute;
+        transform: translateY(-100%);
+        background-color: rgba(0,0,0,0.5);
+        text-align: center;
+        color: white;
+        width: 100%;
+    }
+  }
+
 /* NAVIGATION STUFF GOES HERE  */
 div#navWrapper{grid-row-start: 4;}
 
