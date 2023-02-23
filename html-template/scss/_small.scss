@@ -15,7 +15,10 @@ body {
 
 
 /* HEADER  */
-div#headerWrapper{grid-row-start: 1;}
+div#headerWrapper{
+    grid-row-start: 1;
+    background-color: #ff9696;
+}
 header {
     display: grid;
     grid-template-columns: 100px auto 44px;
@@ -32,6 +35,9 @@ header {
     }
 } // end header
 
+.swiper-wrapper{
+    margin-bottom: 25px;
+}
 .swiper {
     width: 100%;
     height: auto;
@@ -52,7 +58,10 @@ header {
   }
 
 /* NAVIGATION STUFF GOES HERE  */
-div#navWrapper{grid-row-start: 4;}
+div#navWrapper{
+    grid-row-start: 4;
+    background-color: #b7ffc2;
+}
 
 div#hamburger a, div#closex a{
     display: block;
@@ -143,14 +152,11 @@ div.flexed{
     .small-#{$i} {flex-basis: $w;}
 }
 
-.jumbotron{
-    background-color: darken($accent, 40%);
-    p{
-        color: white;
-        padding: 2rem 0;
-    }
-    h2{
-        color:white;
+.information{
+    display: flex;
+    justify-content: space-between;
+    .news-letter{
+
     }
 }
 

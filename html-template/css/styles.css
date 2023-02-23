@@ -107,7 +107,8 @@ body {
 
 /* HEADER  */
 div#headerWrapper {
-  grid-row-start: 1; }
+  grid-row-start: 1;
+  background-color: #ff9696; }
 
 header {
   display: grid;
@@ -121,6 +122,9 @@ header {
     font-weight: 300;
     padding-left: .5rem;
     color: #ae1e1e; }
+
+.swiper-wrapper {
+  margin-bottom: 25px; }
 
 .swiper {
   width: 100%;
@@ -140,7 +144,8 @@ header {
 
 /* NAVIGATION STUFF GOES HERE  */
 div#navWrapper {
-  grid-row-start: 4; }
+  grid-row-start: 4;
+  background-color: #b7ffc2; }
 
 div#hamburger a, div#closex a {
   display: block;
@@ -253,13 +258,9 @@ div.flexed {
 .small-12 {
   flex-basis: 100%; }
 
-.jumbotron {
-  background-color: #203541; }
-  .jumbotron p {
-    color: white;
-    padding: 2rem 0; }
-  .jumbotron h2 {
-    color: white; }
+.information {
+  display: flex;
+  justify-content: space-between; }
 
 .boxes {
   background-color: #305164;
@@ -349,7 +350,6 @@ footer {
     height: auto; }
     nav ul {
       display: flex;
-      justify-content: end;
       border: none; }
       nav ul li {
         border: none; }
