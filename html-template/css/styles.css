@@ -108,7 +108,7 @@ body {
 /* HEADER  */
 div#headerWrapper {
   grid-row-start: 1;
-  background-color: #ff9696; }
+  background-color: #c4c8cb; }
 
 header {
   display: grid;
@@ -121,7 +121,7 @@ header {
     font-size: 1.6rem;
     font-weight: 300;
     padding-left: .5rem;
-    color: #ae1e1e; }
+    color: #1e47ae; }
 
 .swiper-wrapper {
   margin-bottom: 25px; }
@@ -168,7 +168,7 @@ nav {
     text-decoration: none;
     text-align: right; }
   nav ul li.active a {
-    background-color: #e15151;
+    background-color: #517ae1;
     color: #111; }
   nav ul li a:hover {
     background-color: #7a7a7a;
@@ -183,8 +183,7 @@ div.grid {
   flex-wrap: wrap; }
 
 div.card {
-  border: 1px solid #bebebe;
-  background-color: #adadad;
+  border: 2px solid #bebebe;
   text-align: center; }
   div.card section {
     background-color: #444;
@@ -195,7 +194,7 @@ div.card {
     color: #1b1b1b; }
 
 button {
-  background-color: #ae1e1e;
+  background-color: blue;
   color: white;
   padding: 1rem 3rem;
   margin: 1rem;
@@ -204,7 +203,7 @@ button {
 button:hover {
   cursor: pointer;
   background-color: white;
-  color: #ae1e1e; }
+  color: blue; }
 
 /* Columns */
 div.flexed {
@@ -212,9 +211,13 @@ div.flexed {
   flex-wrap: wrap;
   padding-top: 2rem; }
   div.flexed p {
-    padding-left: 2%; }
+    padding-top: .5rem;
+    width: 100%;
+    color: white;
+    text-align: left;
+    background-color: #333; }
   div.flexed h2 {
-    padding-top: .5rem; }
+    padding: .5rem; }
 
 .column {
   padding: 0 2vw; }
@@ -259,8 +262,24 @@ div.flexed {
   flex-basis: 100%; }
 
 .information {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  background-color: #c0e3ff;
   display: flex;
   justify-content: space-between; }
+  .information .contact h2 {
+    padding-bottom: 1rem; }
+  .information .news-letter p {
+    padding: .5rem 0 1rem 0; }
+  .information .news-letter input {
+    width: 100%;
+    padding: 1rem; }
+  .information .news-letter button {
+    width: 100%;
+    border-radius: 3rem;
+    margin: 1rem 0; }
+  .information .why p {
+    padding-left: 0; }
 
 .boxes {
   background-color: #305164;
@@ -275,28 +294,31 @@ div.flexed {
   max-height: 220px; }
 
 .blogs {
-  max-width: 300px;
+  max-width: 240px;
   max-height: 240px; }
 
 /* Footer */
+.social-wrapper {
+  background-color: #a8a8a8; }
+
 div.social {
-  background-color: #a3a3a3;
   display: flex;
-  padding: 1rem 0;
-  margin-top: 1rem; }
+  padding: .5rem;
+  margin-top: 1rem;
+  justify-content: center;
+  margin: 0; }
 
 div.social a {
-  flex-basis: 25%;
   text-align: center;
   color: white;
   font-size: 3rem;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: .5rem; }
 
 div.social a:hover {
-  color: #e15151; }
+  color: #517ae1; }
 
 div#footerWrapper {
-  grid-row-start: 3;
   background-color: #1b1b1b; }
 
 /* MAIN  */
@@ -338,21 +360,63 @@ footer {
       display: block;
       justify-self: end; }
       header div#phone a {
-        color: #7a7a7a;
+        color: black;
         text-decoration: none;
         font-weight: 500;
         font-size: 1.5rem; }
       header div#phone a:hover {
-        color: #ae1e1e; }
+        color: #1e47ae; }
 
   /* NAVIGATION STUFF GOES HERE  */
   nav {
     height: auto; }
-    nav ul {
-      display: flex;
-      border: none; }
-      nav ul li {
-        border: none; }
+    nav .search {
+      float: right;
+      display: inline; }
+      nav .search button {
+        padding: .1rem;
+        margin-left: 0; }
+
+  nav ul {
+    display: flex;
+    margin-left: 2%; }
+
+  nav ul li a {
+    display: block;
+    padding: .9rem 1.2rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+    transition: background 0.3s linear; }
+
+  nav ul li a:hover {
+    background-color: #3535ff;
+    color: white; }
+
+  #primaryNav li.parent > a:after {
+    content: "\25BC";
+    font-size: .65rem;
+    float: left;
+    padding: 0 .25rem; }
+
+  ul li ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #becdf4;
+    border: none;
+    width: 14rem;
+    position: absolute;
+    left: -999rem;
+    z-index: 99; }
+
+  ul li ul li {
+    border-right: none;
+    border-top: 1px solid black;
+    color: white; }
+
+  ul li:hover ul {
+    left: auto;
+    margin-left: 0; }
 
   div#hamburger, div#closex {
     display: none; }
@@ -398,6 +462,9 @@ footer {
   .medium-12 {
     flex-basis: 100%; }
 
+  div.card:hover {
+    cursor: pointer; }
+
   /* Structure STUFF GOES HERE  */
   div#headerWrapper {
     grid-row-start: 1; }
@@ -416,6 +483,10 @@ footer {
     margin: auto; }
 
   /* NAVIGATION STUFF GOES HERE  */
+  nav ul li a {
+    font-size: .9rem;
+    padding: .5rem 1.2rem; }
+
   /* Main */
   /* Columns */
   .large-0 {

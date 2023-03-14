@@ -33,9 +33,18 @@
         <ul>
         <li><a href="#">Home</a></li>
         <li class ="active"><a href="#">Cruises</a></li>
-        <li><a href="#">Agents</a></li>
-        <li><a href="#">Book</a></li>
+        <li><a href="#">Agents</a>
+            <ul>
+                <li><a href="#">Find an Agent</a></li>
+                <li><a href="#">Message your Agent</a></li>
+            </ul>
+        </li>
+        <li class="parent"><a href="#">Book</a></li>
     </ul>
+    <div class="search">
+    <input type="search" placeholder="search...">
+    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+</div>
     </nav>
 </div> <!-- end nav wrapper -->
 
@@ -43,7 +52,7 @@
     <main>
         <!-- Slider main container -->
 <div class="swiper">
-    <!-- Additional required wrapper -->
+    
     <div class="swiper-wrapper">
         <!-- <div class="swiper-slide">
       <picture>
@@ -64,7 +73,7 @@
         <picture>
           <source srcset="images/square-ship.jpg" media ="(max-width: 28.12rem)">
           <source srcset="images/ship.jpg" media ="(min-width: 28.12rem)">
-          <img src="images/ship.jpg" alt="Cruise Ship">
+          <img src="images/ship1.jpg" alt="Cruise Ship">
         </picture>
         <p><b>Cabot Cruises</b> -  Relax on one of our best ranked cruise ships</p>
       </div>
@@ -72,7 +81,7 @@
         <picture>
           <source srcset="images/square-beach.jpg" media ="(max-width: 28.12rem)">
           <source srcset="images/beach.jpg" media ="(min-width: 28.12rem)">
-          <img src="images/beach.jpg" alt="Beach">
+          <img src="images/beach1.jpg" alt="Beach">
         </picture>
         <p><b>Sandy Beaches</b> - Stop at some of the best beaches in the world</p>
       </div>
@@ -80,7 +89,7 @@
         <picture>
           <source srcset="images/square-golf.jpg" media ="(max-width: 28.12rem)">
           <source srcset="images/golf.jpg" media ="(min-width: 28.12rem)">
-          <img src="images/golf.jpg" alt="Mini Golf">
+          <img src="images/golf1.jpg" alt="Mini Golf">
         </picture>
         <p><b>Activities</b> - Enjoy playing mini golf or other activities with your family</p>
       </div>
@@ -88,7 +97,7 @@
         <picture>
           <source srcset="images/square-pool.jpg" media ="(max-width: 28.12rem)">
           <source srcset="images/pool.jpg" media ="(min-width: 28.12rem)">
-          <img src="images/pool.jpg" alt="Beach">
+          <img src="images/pool1.jpg" alt="Pool">
         </picture>
         <p><b>Deck Pool</b> - Swim anytime at the deck pool</p>
       </div>
@@ -115,59 +124,62 @@
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
 
+    <h2>Recent Blog Activities</h2>
     <div class = "grid flexed">
-        <div class="card small-12 medium-6 large-3">
-            <h2>Understanding Rights</h2>
+        
+        <div class="card small-6 medium-5 large-3">
             <figure>
-                <img class = "blogs" src="images/blog1.jpg" alt="Bill of Rights">
+                <img class = "blogs" src="images/blog1.jpg" alt="Cruise Slide">
             </figure>
+            <h2>Funnest Vacation Ever!</h2>
             <p>January 20. 2022</p>
-            <div class = "readon"><a href = "#">Read More</a></div>
         </div>
-        <div class="card small-12 medium-6 large-3">
-            <h2>Business Blog</h2>
+        <div class="card small-6 medium-5 large-3">
             <figure>
-                <img class = "blogs" src="images/blog2.jpg" alt="Business Blog">
+                <img class = "blogs" src="images/blog2.jpg" alt="Cruise Clipart">
             </figure>
+            <h2>Dreams come true on cruises</h2>
             <p>March 14, 2022</p>
-            <div class = "readon"><a href = "#">Read More</a></div>
         </div>
-        <div class="card small-12 medium-6 large-3">
-            <h2>Missing Code</h2>
+        <div class="card small-6 medium-5 large-3">
             <figure>
-                <img class = "blogs" src="images/blog3.jpg" alt="Missing Code">
+                <img class = "blogs" src="images/blog3.jpg" alt="Family on Beach">
             </figure>
+            <h2>Best family trip</h2>
             <p>September 6, 2022</p>
-            <div class = "readon"><a href = "#">Read More</a></div>
         </div>
-        <div class="card small-12 medium-6 large-3">
-            <h2>Crime Law</h2>
+        <div class="card small-6 medium-5 large-3">
             <figure>
-                <img class = "blogs" src="images/blog4.jpeg" alt="Crime Law">
+                <img class = "blogs" src="images/blog4.jpg" alt="Sunny Beach">
             </figure>
+            <h2>The perfect winter get away</h2>
             <p>December 1, 2022</p>
-            <div class = "readon"><a href = "#">Read More</a></div>
         </div>
     </div>
-
+<br>
 <div class="information">
-    <div class="contact">
+    <div class="contact small-12 medium-6 large-3">
         <h2>Contact Us</h2>
         <h3>CABOT CRUISES</h3>
-        <h3>23 South Main St. Suite 16</h3>
-        <h3>Lexington, VA 24450</h3>
-        <h2>Phone:</h2>
-        <h3>1-800-444-2343</h3>
-        <h2>Hours of Operation:</h2>
+        <div><a href="https://www.google.com/maps/place/Royal+Caribbean+Terminal+25/@26.0817143,-80.1061219,14.5z/data=!4m9!1m2!2m1!1sgoogle+maps!3m5!1s0x88d9000e9feaaaab:0xaeb8cb706b7004c6!8m2!3d26.0868278!4d-80.1148422!16s%2Fg%2F11cmry03qp">
+        <h3>3046 Eller Dr</h3>
+        <h3>Fort Lauderdale, FL 33316</h3>
+        </a>
+        </div>
+        <br>
+        <h3>Phone:</h3>
+        <div id="phone"><a href="tel:18004442343">1-800-444-2343</a></div>
+        <br>
+        <h3>Hours of Operation:</h3>
         <h3>Monday - Friday 9am - 4pm est</h3>
     </div>
-    <div class="news-letter">
+    <div class="news-letter small-12 medium-6 large-4">
         <h2>News Letter</h2>
         <p>Subscribe to our email list and stay up-to-date with our hottest offers and latest specials.</p>
-        <input type="email">
+        <input type="email" placeholder="example@gmail.com" required="true">
         <button>Subscribe</button>
     </div>
-    <div class="why">
+    <div class="why small-12 medium-12 large-4">
         <h2>Why Cabot Cruises</h2>
         <p>Cabot Cruises is a travel agency providing the best cruise deals on our online travel website. We can help you with all inclusive vacations including discounted cruises</p>
         <p>We do not sell travel to residents of Delaware, Iowa, Florida, Hawaii, and Washington state because those states are just weird.
@@ -177,27 +189,25 @@
 </div>
 
 
+    <div class="social-wrapper">
         <div class = "flexed social">
-            <div class = "small-2"></div>
-            <div class="column small-2">
+            
+            
                 <a href = "#" class="fa-brands fa-square-facebook"></a>
-            </div>
-            <div class="column small-2">
+            
                 <a href = "#" class="fa-brands fa-square-youtube"></a>
-            </div>        
-            <div class="column small-2">
+            
                 <a href = "#" class="fa-brands fa-square-instagram"></a>
-            </div>
-            <div class="column small-2">
+          
                 <a href="#" class="fa-brands fa-square-pinterest"></a>
-            </div>
-            <div class="column small-2">
+            
                 <a href = "#" class="fa-brands fa-square-twitter"></a>
-            </div>
+            
         </div>
-
-    </main>
+    </div>
 </div><!-- end main wrapper -->
+    </main>
+
     
 <div id="footerWrapper">
     <footer>

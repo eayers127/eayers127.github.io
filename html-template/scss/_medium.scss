@@ -8,7 +8,7 @@ header{
         display:block;
         justify-self: end;
         a{
-            color: $secondaryColor;
+            color: black;
             text-decoration: none;
             font-weight: $normalWeight;
             font-size: 1.5rem;
@@ -22,11 +22,63 @@ header{
 /* NAVIGATION STUFF GOES HERE  */
 nav{
     height: auto;
-    ul{
-        display: flex;
-        border: none;
-        li{border:none;}
+    .search{
+        float: right;
+        display: inline;
+        button{
+            padding: .1rem;
+            margin-left: 0;
+        }
     }
+}
+nav ul{
+    display: flex;
+    margin-left: 2%;
+    // border-left: 1px solid gray;
+}
+
+nav ul li a{
+    display: block;
+    padding: .9rem 1.2rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+    transition: background 0.3s linear;
+}
+
+nav ul li a:hover{
+    background-color: darken(rgb(78, 78, 255), 5%);
+    color: white;
+}
+
+#primaryNav li.parent > a:after{
+    content: "\25BC";
+    font-size: .65rem;
+    float: left;
+    padding: 0 .25rem;
+}
+
+ul li ul{
+    display: flex;
+    flex-direction: column;
+    background-color: lighten($primaryColor, 45%);
+    border: none;
+    width: 14rem;
+    position: absolute;
+    left: -999rem;
+    z-index: 99;
+}
+
+ul li ul li{
+    border-right: none;
+    border-top: 1px solid black;
+    color: white;
+
+}
+
+ul li:hover ul{
+    left: auto;
+    margin-left: 0;
 }
 
 div#hamburger, div#closex{
@@ -45,6 +97,9 @@ div#hamburger, div#closex{
 @for $i from 0 through 12{
     $w:($i / 12) * 100%;
     .medium-#{$i} {flex-basis: $w;}
+}
+div.card:hover{
+    cursor: pointer;
 }
 
 /* Structure STUFF GOES HERE  */
