@@ -21,10 +21,13 @@ header{
 
 /* NAVIGATION STUFF GOES HERE  */
 nav{
+    .nav-bar{
+        display: block;
+    }
     height: auto;
     .search{
         float: right;
-        display: inline;
+        display: block;
         button{
             padding: .1rem;
             margin-left: 0;

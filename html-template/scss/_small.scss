@@ -60,7 +60,7 @@ header {
 /* NAVIGATION STUFF GOES HERE  */
 div#navWrapper{
     grid-row-start: 4;
-    background-color: #b7ffc2;
+    background-color: lighten($primaryColor, 40%);
 }
 
 div#hamburger a, div#closex a{
@@ -69,7 +69,7 @@ div#hamburger a, div#closex a{
     font-size: 1.5rem;
     color: #333;
     text-decoration: none;
-    text-align: right;
+    // text-align: right;
 }
 
 nav{
@@ -97,9 +97,9 @@ nav{
         background-color: $secondaryColor;
         color: white;
     }
-    // .search{
-    //     display: none;
-    // }
+    .search{
+        display: none;
+    }
 }
 
 /* Main */
@@ -286,4 +286,10 @@ footer {
 	color: #bbb;
 	text-align: center;
 	a{color: #eee;}
+}
+
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
 }

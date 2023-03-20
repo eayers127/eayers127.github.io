@@ -17,8 +17,12 @@
 
 <body>
 <div id="headerWrapper">
-	<header>
-        <img src="images/logo.png" alt="logo">
+	<header class="clearfix">
+        <figure class="logo">
+            <img src="images/logo.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x,
+            images/logo3.png 3x">
+        </figure>
+        
 		<h1>Cabot Cruises</h1>
         <div id="hamburger"><a href="#closex">&#9776;</a></div>
         <div id="phone"><a href="tel:18004442343">1-800-444-2343</a></div>
@@ -28,7 +32,8 @@
     
     
 <div id="navWrapper">
-    <nav>
+    <nav class="clearfix">
+        <div class="nav-bar" >
         <div id="closex"><a href="#hamburger">x</a></div>
         <ul>
         <li><a href="#">Home</a></li>
@@ -45,58 +50,45 @@
     <input type="search" placeholder="search...">
     <button><i class="fa-solid fa-magnifying-glass"></i></button>
 </div>
+</div>
     </nav>
 </div> <!-- end nav wrapper -->
 
 <div id="mainWrapper">
-    <main>
+    <main class="clearfix">
         <!-- Slider main container -->
 <div class="swiper">
     
     <div class="swiper-wrapper">
-        <!-- <div class="swiper-slide">
-      <picture>
-        <source srcset="images/blog1.jpg" media ="(max-width: 28.12rem)">
-        <source srcset="images/blog1.jpg" media ="(min-width: 28.12rem)">
-        <img src="images/blog1.jpg" alt="Boston Statue">
-      </picture>
-    </div>
-    <div class="swiper-slide">
-        <picture>
-          <source srcset="images/blog2.jpg" media ="(max-width: 28.12rem)">
-          <source srcset="images/blog2.jpg" media ="(min-width: 28.12rem)">
-          <img src="images/blog2.jpg" alt="Boston Statue">
-        </picture>
-      </div> -->
-      <!-- <p><b>George Washington</b> - This monument is dedicated to one of the fathers of the revelution and first president of the U.S.</p> -->
+        
       <div class="swiper-slide">
         <picture>
-          <source srcset="images/square-ship.jpg" media ="(max-width: 28.12rem)">
-          <source srcset="images/ship.jpg" media ="(min-width: 28.12rem)">
+          <!-- <source media="(max-width: 560px)" srcset="images/square-ship.jpg" >
+          <source media="(max-width: 1000px)" srcset="images/ship.jpg"> -->
           <img src="images/ship1.jpg" alt="Cruise Ship">
         </picture>
         <p><b>Cabot Cruises</b> -  Relax on one of our best ranked cruise ships</p>
       </div>
       <div class="swiper-slide">
         <picture>
-          <source srcset="images/square-beach.jpg" media ="(max-width: 28.12rem)">
-          <source srcset="images/beach.jpg" media ="(min-width: 28.12rem)">
+          <!-- <source media ="(max-width: 560px)" srcset="images/square-beach.jpg">
+          <source media ="(max-width: 1000px)" srcset="images/beach.jpg"> -->
           <img src="images/beach1.jpg" alt="Beach">
         </picture>
         <p><b>Sandy Beaches</b> - Stop at some of the best beaches in the world</p>
       </div>
       <div class="swiper-slide">
         <picture>
-          <source srcset="images/square-golf.jpg" media ="(max-width: 28.12rem)">
-          <source srcset="images/golf.jpg" media ="(min-width: 28.12rem)">
+          <!-- <source media ="(max-width: 560px)" srcset="images/square-golf.jpg">
+          <source media ="(max-width: 1000px)" srcset="images/golf.jpg"> -->
           <img src="images/golf1.jpg" alt="Mini Golf">
         </picture>
         <p><b>Activities</b> - Enjoy playing mini golf or other activities with your family</p>
       </div>
       <div class="swiper-slide">
         <picture>
-          <source srcset="images/square-pool.jpg" media ="(max-width: 28.12rem)">
-          <source srcset="images/pool.jpg" media ="(min-width: 28.12rem)">
+          <!-- <source media ="(max-width: 560px)" srcset="images/square-pool.jpg">
+          <source media ="(max-width: 1000px)" srcset="images/pool.jpg"> -->
           <img src="images/pool1.jpg" alt="Pool">
         </picture>
         <p><b>Deck Pool</b> - Swim anytime at the deck pool</p>
@@ -161,9 +153,9 @@
     <div class="contact small-12 medium-6 large-3">
         <h2>Contact Us</h2>
         <h3>CABOT CRUISES</h3>
-        <div><a href="https://www.google.com/maps/place/Royal+Caribbean+Terminal+25/@26.0817143,-80.1061219,14.5z/data=!4m9!1m2!2m1!1sgoogle+maps!3m5!1s0x88d9000e9feaaaab:0xaeb8cb706b7004c6!8m2!3d26.0868278!4d-80.1148422!16s%2Fg%2F11cmry03qp">
-        <h3>3046 Eller Dr</h3>
-        <h3>Fort Lauderdale, FL 33316</h3>
+        <div><a href="https://www.google.com/maps/place/Atlantic+Dunes+Park/@26.4445768,-80.0373794,13.44z/data=!4m6!3m5!1s0x88d8e07bba62f3ef:0x7df6ee2e23e0b08e!8m2!3d26.4420229!4d-80.0608266!16s%2Fg%2F1hf076c5f">
+        <h3>1605 S Ocean Blvd,</h3>
+        <h3>Delray Beach, FL 33483</h3>
         </a>
         </div>
         <br>
@@ -219,5 +211,25 @@
 <script src="https://kit.fontawesome.com/59e38dadde.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
+<script type="application/ld+json">
+    {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "image":"",
+    "name":"Cabot Cruise",
+    "address":{
+    "@tpye":"PostalAddress",
+    "streetAddress":"1605 S Ocean Blvd",
+    "addressLocality":"Delray Beach",
+    "addressRegion":"FL",
+    "postalCode":"33483",
+    "addressCountry":"US"
+    },
+    "url":"",
+    "priceRange":"Please Call",
+    "telephone":"8004442343",
+    "openingHours":"Mo-Fr 09:00-16:00"
+    }
+    </script>
 </body>
 </html> 

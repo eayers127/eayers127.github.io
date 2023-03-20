@@ -145,15 +145,14 @@ header {
 /* NAVIGATION STUFF GOES HERE  */
 div#navWrapper {
   grid-row-start: 4;
-  background-color: #b7ffc2; }
+  background-color: #a8bdf0; }
 
 div#hamburger a, div#closex a {
   display: block;
   padding: .8rem 2vw;
   font-size: 1.5rem;
   color: #333;
-  text-decoration: none;
-  text-align: right; }
+  text-decoration: none; }
 
 nav {
   height: 100vh; }
@@ -173,6 +172,8 @@ nav {
   nav ul li a:hover {
     background-color: #7a7a7a;
     color: white; }
+  nav .search {
+    display: none; }
 
 /* Main */
 div#mainWrapper {
@@ -349,6 +350,11 @@ footer {
   footer a {
     color: #eee; }
 
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
 @media only screen and (min-width: 35rem) {
   /* Header STUFF GOES HERE  */
   #headerWrapper {
@@ -370,9 +376,11 @@ footer {
   /* NAVIGATION STUFF GOES HERE  */
   nav {
     height: auto; }
+    nav .nav-bar {
+      display: block; }
     nav .search {
       float: right;
-      display: inline; }
+      display: block; }
       nav .search button {
         padding: .1rem;
         margin-left: 0; }
