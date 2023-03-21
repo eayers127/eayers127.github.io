@@ -38,6 +38,12 @@ header {
 .swiper-wrapper{
     margin-bottom: 25px;
 }
+// .swiper-horizontal{
+//     bottom: 1px;
+// }
+// .swiper-pagination{
+//     padding: .5rem;
+// }
 .swiper {
     width: 100%;
     height: auto;
@@ -139,6 +145,7 @@ button:hover{
 
 /* Columns */
 div.flexed{
+    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     padding-top: 2rem;
@@ -149,7 +156,10 @@ div.flexed{
         text-align: left;
         background-color: #333;
     }
-    h2{padding:.5rem;}
+    h2{
+        padding:.5rem;
+        margin-top: 1rem;
+    }
 }
 .column{
     padding: 0 $gutter;
